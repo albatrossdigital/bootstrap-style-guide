@@ -1,8 +1,10 @@
 ## Installation
 
-See INSTALL.md for more node install directions!
+#### Install node and dependencies
 
-#### Basic (repo already setup)
+See INSTALL.md for node install directions!
+
+#### Basic (repo and  already setup)
 Just clone the repo, npm install and run grunt:
 ```
 git clone git@github.com:albatrossdigital/<repoName>.git
