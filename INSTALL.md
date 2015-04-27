@@ -3,7 +3,7 @@
 
 ### Install node
 
-#### Windows --------------------------------
+#### Windows
 
 
 1. Read http://blog.teamtreehouse.com/install-node-js-npm-windows
@@ -11,7 +11,7 @@
 2. Download installer and install https://nodejs.org/download/
 
 
-#### Linux ----------------------------------
+#### Linux
 
 
 1. https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager
@@ -19,7 +19,7 @@
 2. Follow directions
 
 
-#### Macintosh -------------------------------
+#### Macintosh
 
 
 1. Get homebrew.  Probably already have this, if you don't run this from command line:
