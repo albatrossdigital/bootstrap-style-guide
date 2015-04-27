@@ -35,7 +35,7 @@ grunt
 ```
 git status
 git commit -m "msg" filenames
-git push
+git push origin master
 ```
 
 #### Push changes to gh-pages branch
@@ -52,22 +52,22 @@ albatrossdigital.github.io,127.0.0.1:9000,*.albatrossdemos.com
 
 #### Important files
 
--> app/scss/app.scss
+**app/scss/app.scss**
 Imports all the global code into one file. If you create any new partials, they will have to be included in this file
 
--> app/scss/_local-variables.scss
+**app/scss/_local-variables.scss**
 Sets up reusable variables, and bootstrap variables for the sass code base
 
--> app/scss/_mixins.scss
+**app/scss/_mixins.scss**
 Reusable code with varying degrees of complexity.
 
--> app/scss/_styleguide-only.scss
+**app/scss/_styleguide-only.scss**
 Code only meant to help layout the styleguide, not to be used for production down the line
 
--> app/scss/components/* 
+**app/scss/components/{files}**
 Any modular code meant for production.  Best practice is to create a new partial for any distinct css module.  Easiest way is to just copy boostrap's convention: bootstrap-style-guide/app/bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap 
 
--> _appstyles.scss
+**app/scss/_appstyles.scss**
 Any general code that doesn't fit into app/scss/components/* or other partials.  This file should be as small as possible, as anything here will need to still be ported to production and no one wants a "garbage" file.
 
 #### Using the responsive mixin "respond"
