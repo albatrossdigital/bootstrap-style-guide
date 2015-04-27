@@ -137,7 +137,14 @@ module.exports = function(grunt) {
 					'bootstrap-sass-official'
 				]
 			}
-		}
+		},
+
+    'gh-pages': {
+      options: {
+        base: 'dist'
+      },
+      src: ['**']
+    }
 
 	});
 
@@ -149,5 +156,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('server-dist', ['connect:dist']);
 	
 	grunt.registerTask('publish', ['compile-sass', 'clean:dist', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin']);
+	
+	grunt.registerTask('github', ['publish', 'gh-pages']);
 
 };
