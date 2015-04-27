@@ -23,13 +23,10 @@
 
 
 1. Get homebrew.  Probably already have this, if you don't run this from command line:
-
 ```
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" 
 ```
-
 2. Get Node installed.  Just run this from command line
-
 ```
 brew install node  
 ```
