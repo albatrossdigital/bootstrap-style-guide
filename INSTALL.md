@@ -40,19 +40,29 @@ brew install node
 #### 1. Get grunt installed globally.  From command line
 
 ```
-npm install -g grunt-cli  
+npm install -g grunt-cli
+# might need sudo
+```
+
+This might have some difficulty with permissions... either you can use "sudo" or look into making sure npm global installs are possible without it: http://stackoverflow.com/questions/16724259/npm-command-sudo-or-not
+
+#### 2. Install bower globally
+
+```
+npm install -g bower
+# might need sudo
 ```
 
 This might have some difficulty with permissions... either you can use "sudo" or look into making sure npm global installs are possible without it: http://stackoverflow.com/questions/16724259/npm-command-sudo-or-not
   
-#### 2. Install dependencies in the theme sub folder:
+#### 3. Install dependencies in the theme sub folder:
 
 ```
 cd {where ever you put this}
 npm install && bower install 
 ```
 
-#### 3. Make sure grunt task runs... in same theme folder:
+#### 4. Make sure grunt task runs... in same theme folder:
 
 ```
 grunt
