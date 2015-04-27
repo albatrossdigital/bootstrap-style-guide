@@ -1,0 +1,43 @@
+//*******************************
+
+// Social
+
+//*****************************
+
+.social-icons {
+  i {
+    margin-right: 0;
+  }
+  ul > li {
+    padding: 0;
+  }
+  a {
+    color: $gray;
+    display: block;
+    &, i {
+      font-size: 1.05em;
+      height: 18px;
+      overflow: hidden;
+      text-align: center;
+      width: 25px;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+    &.facebook:hover {
+      color: $blue-facebook;
+    }
+    &.twitter:hover {
+      color: $blue-twitter;
+    }
+    &.pinterest:hover {
+      color: $red-pinterest;
+    }
+    &.youtube:hover {
+      color: $red-youtube;
+    }
+    &.flickr:hover {
+      color: $pink-flickr;
+    }
+  }
+}

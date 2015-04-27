@@ -10,13 +10,27 @@
 
 // Local Bootstrap settings.
 @import "local-variables";
-
+// Import bootstrap
 @import "vendor/bootstrap";
 
 
 // Local files
+//------------------------------------------
 
+@import "helpers/media-queries";
 @import "mixins";
-@import "utilities";
+
+// Styleguide code
+
+@import "helpers/utilities";
 @import "styleguide-only";
+
+
+// Production code
+
 @import "appstyles";
+@import "components/type";
+@import "components/media";
+@import "components/buttons";
+@import "components/icons";
+@import "components/social";

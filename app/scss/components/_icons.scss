@@ -1,0 +1,25 @@
+//*******************************
+
+// Icons
+
+//*****************************
+
+a {
+  i.fa {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+i.fa {
+  margin-right: 0.4em;
+}
+
+.icon-right {
+  text-align: left;
+  i.fa {
+    float: right;
+    margin-right: 0;
+  }
+}

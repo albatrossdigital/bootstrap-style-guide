@@ -1,0 +1,65 @@
+
+//*******************************
+
+// Typography
+
+//*****************************
+
+h4, .h4 {
+  color: $gray;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+// Modify margins
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  &.no-margin {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  &.no-margin-top {
+    margin-top: 0;
+  }
+  &.no-margin-bottom {
+    margin-bottom: 0;
+  }
+  &.large-margin-bottom {
+    margin-bottom: $line-height-computed * 1.5;
+  }
+  &.larger-margin-bottom {
+    margin-bottom: $line-height-computed * 2;
+  }
+}
+
+// Don't want margins on first / last children
+section, .content {
+  & > h1,
+  & > h2,
+  & > h3,
+  & > h4,
+  & > h5,
+  & > p {
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+p.heading {
+  color: $gray;
+}
+
+//*******************************
+
+// Links
+
+//*****************************
+
+a.action-link {
+  &:hover {
+    text-decoration: none;
+  }
+}
